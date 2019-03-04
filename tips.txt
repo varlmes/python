@@ -1,0 +1,5 @@
+#open new spyder from Anaconda prompt
+spyder --new-instance option
+
+#change the port number for flask
+flask run -h localhost -p 3000
