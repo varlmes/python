@@ -3,3 +3,18 @@ spyder --new-instance option
 
 #change the port number for flask
 flask run -h localhost -p 3000
+
+#pip install from the requirement file
+pip install -r /path/to/requirements.txt
+
+#pip install even though you have install it before
+pip install -U -r requirements.txt 
+
+
+#create requirements file for the missing packages
+pip freeze > requirements.txt
+
+#setuptools
+pip install --user --upgrade setuptools wheel
+setup.py sdist bdist_wheel
+pip install --user --upgrade twine
