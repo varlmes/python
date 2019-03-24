@@ -14,6 +14,10 @@ pip install -U -r requirements.txt
 #create requirements file for the missing packages
 pip freeze > requirements.txt
 
+# alternative way to create requirements file
+pip install pipreqs
+pipreqs /path/to/project
+
 #setuptools
 pip install --user --upgrade setuptools wheel
 setup.py sdist bdist_wheel
