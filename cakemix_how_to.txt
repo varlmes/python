@@ -10,26 +10,29 @@ pip install --upgrade cakemix
 
 USAGE:
 
-# import cakemix excel modules and readExcel, get_column and plotBarData functions
+# importing cakemix.excel functions
 from cakemix.excel import readExcel, get_column, plotBarData
 
-#read data
-data=readExcel('C:/Users/TLB/Documents/uretici2.xlsx','Sheet2')
+# reading excel file. You can find this file in github: https://github.com/varlmes/python/blob/master/datatable_sample.xlsx
+data=readExcel('C:\data\python\cakemix\datatable_sample.xlsx','Sheet1')
 
-#get first column of the data that you are interested
-result1=get_column(data,1)
+#showing the data
+data
 
-#get second column of the data that you are interested
-result2=get_column(data,2)
+# getting the first column of data
+result1=get_column(data,0)
 
-#verify where the column values start. In this case, 4+1=5th column
-result1[4:]
+# printing
+result1[2:]
 
-#verify where the column values start. In this case, 4+1=5th column
-result2[4:]
+# getting the second column of data
+result2=get_column(data,5)
 
-#plotData, data1, data2, xlabel, ylabel
-plotBarData(result1[4:],(result2[4:]),'Usage','')
+# printing
+result2[2:]
+
+#plotting the data
+plotBarData(result1[2:],(result2[2:]),'Salary','Name')
 
 
 Example 2: from cakemix import list
