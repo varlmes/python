@@ -22,3 +22,23 @@ pipreqs /path/to/project
 pip install --user --upgrade setuptools wheel
 setup.py sdist bdist_wheel
 pip install --user --upgrade twine
+
+
+## how to create electron standalone
+cd todos
+ionic serve
+y
+ionic serve
+npm install -g electron
+npm install -g electron-packager
+npm install -g electron-installer
+npm install -g electron-packager
+npm install -g electron-installer-dmg
+npm install --save-dev electron
+npm install --save-dev electron-installer-dmg
+npm run build --prod
+ng run electron-serve
+npm run electron-serve
+npm run windows-release
+npm run windows-build
+npm run windows-release
